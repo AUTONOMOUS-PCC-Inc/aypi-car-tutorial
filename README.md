@@ -29,12 +29,11 @@ AUTONOMOUS PCC 바이브코딩 캠프 **1회차(자율주행)** 실습 저장소
 받는 것부터 하면 이렇습니다. 안내서 2단계와 같은 명령입니다.
 
 ```bat
-git clone https://github.com/AUTONOMOUS-PCC-Inc/aypi-car-tutorial.git DonkeyBro
-cd DonkeyBro
+git clone https://github.com/AUTONOMOUS-PCC-Inc/aypi-car-tutorial.git
+cd aypi-car-tutorial
 git submodule update --init --recursive
 ```
 
-- 폴더 이름을 `DonkeyBro`로 만드는 건 **의도한 것**입니다. 안내서의 나머지 경로가 그 이름을 씁니다.
 - 마지막 줄을 빼면 `donkeycar`·`gym-donkeycar` 두 폴더가 **빈 채로** 남습니다. 등록만 하고 내려받지는 않기 때문입니다.
 - 경로가 너무 깊으면 Windows에서 실패합니다 ([아래](#자주-막히는-곳) 참고). 안내서대로 `문서\GitHub` 아래에 두세요.
 
