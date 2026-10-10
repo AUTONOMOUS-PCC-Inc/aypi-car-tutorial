@@ -93,11 +93,11 @@ git submodule update --init --recursive
 
 |     PI     |     EL     |   EM   |    EM    |    EM    |    EM    |
 |   :-----:   |   :-----:   | :------: |   :-----:   |   :-----:   |   :-----:   |
-|   Sunho Park(Prof)    |   Sungwoong Yun    |   Sungjoon Yang    |   Hoil Lee    |   Jeseok Oh    |   Kibum Yun    |
+|   Sungho Park(Prof)    |   Aaron Yoon    |   Sungjoon Yang    |   Hoil Lee    |   Jeseok Oh    |   Kibum Yun    |
 
 <!--
-PI: Sunho Park
-EL: Sungwoong Yun
+PI: Sungho Park
+EL: Aaron Yoon
 EM: Sungjoon Yang
 EM: Hoil Lee
 EM: Jeseok Oh
