@@ -9,7 +9,7 @@ AUTONOMOUS PCC 바이브코딩 캠프 **1회차(자율주행)** 실습 저장소
 
 ![Day](https://img.shields.io/badge/과정-1회차%20하루-0B1B33?style=for-the-badge)
 ![OS](https://img.shields.io/badge/환경-Windows-1E6FD9?style=for-the-badge)
-![Env](https://img.shields.io/badge/conda-donkeybro-16A34A?style=for-the-badge)
+![Env](https://img.shields.io/badge/conda-aypi--car-16A34A?style=for-the-badge)
 ![Python](https://img.shields.io/badge/Python-3.9-1E6FD9?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-A3A3A3?style=for-the-badge)
 
@@ -37,7 +37,7 @@ git submodule update --init --recursive
 - 마지막 줄을 빼면 `donkeycar`·`gym-donkeycar` 두 폴더가 **빈 채로** 남습니다. 등록만 하고 내려받지는 않기 때문입니다.
 - 경로가 너무 깊으면 Windows에서 실패합니다 ([아래](#자주-막히는-곳) 참고). 안내서대로 `문서\GitHub` 아래에 두세요.
 
-그다음은 안내서로 돌아가 conda 환경(`envs/donkeybro_for_windows.yml`)을 만드세요.
+그다음은 안내서로 돌아가 conda 환경(`envs/aypi-car_for_windows.yml`)을 만드세요.
 
 ---
 
@@ -78,7 +78,7 @@ git submodule update --init --recursive
 |---|---|
 | `donkeycar`·`gym-donkeycar` 폴더가 비어 있다 | 서브모듈을 안 받았습니다. 이 폴더 맨 위에서 `git submodule update --init --recursive`. `git submodule init` 만으로는 **안 받아집니다** |
 | clone 중 `Filename too long` | 경로가 너무 깊습니다 (Windows 경로 길이 제한). `문서\GitHub` 처럼 **짧은 경로**에 받으세요. OneDrive 하위 깊은 폴더가 자주 걸립니다 |
-| `donkey` 명령을 찾을 수 없다 | `conda activate donkeybro` 를 안 했거나, 설치 후 이 폴더를 **옮겼습니다**. 옮겼다면 `donkeycar` 안에서 `pip install -e .` 를 다시 돌리세요 |
+| `donkey` 명령을 찾을 수 없다 | `conda activate aypi-car` 를 안 했거나, 설치 후 이 폴더를 **옮겼습니다**. 옮겼다면 `donkeycar` 안에서 `pip install -e .` 를 다시 돌리세요 |
 | `cudart64_110.dll` 경고가 아홉 줄쯤 뜬다 | **정상입니다.** GPU가 없어 CPU로 돌겠다는 알림일 뿐입니다. 인터넷의 "opencv를 지우라"는 조언은 **따르지 마세요** |
 | `Could not connect to server. Is it running?` | 시뮬레이터가 켜지는 데 걸리는 시간보다 기다려 주는 시간이 짧아서입니다. `myconfig.py` 의 `GYM_CONF` 에서 `start_delay` 를 **15**로 올리세요 |
 | 학습이 끝날 기미가 없다 | 원래 오래 걸립니다. 노트북 CPU로 몇천 장이면 수십 분입니다. 시작해 두고 **건드리지 말고** 기다리세요 |
