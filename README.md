@@ -6,6 +6,17 @@
   <br>
 </p>
 
+> [!IMPORTANT]
+> **바이브코딩 캠프 수강생은 이 문서가 아니라 배포된 설치 안내서(PDF)를 따르세요.**
+>
+> 아래 3~5단계는 원저자의 `virtualenv` 방식입니다. 수업은
+> `envs/donkeybro_for_windows.yml` 로 **conda 환경 `donkeybro`** 를 만드는 방식이고,
+> 두 방식을 섞으면 패키지 버전이 꼬입니다. 이 문서는 원저자의 기록으로 보존합니다.
+>
+> 라이브러리 폴더 두 개(`donkeycar`, `gym-donkeycar`)가 하는 일은 각 폴더의
+> README를 보세요.
+
+
 # Contributors
 |     PI     |     EL     |   EM   |    EM    |    EM    |    EM    |
 |   :-----:   |   :-----:   | :------: |   :-----:   |   :-----:   |   :-----:   |
@@ -95,18 +106,25 @@ cd C:\
 
 
 
-해당([링크](https://github.com/YUNSUNGWOONG/donkeycar_projects))로 git clone을 해준다.
+해당([링크](https://github.com/AUTONOMOUS-PCC-Inc/aypi-car-tutorial))로 git clone을 해준다.
 
 ```shell
-git clone https://github.com/YUNSUNGWOONG/DonkeyBro.git
-cd DonkeyBro
+git clone https://github.com/AUTONOMOUS-PCC-Inc/aypi-car-tutorial.git
+cd aypi-car-tutorial
 ```
 
-기존 서브모듈들을 최신버전으로 업데이트 해준다.
+서브모듈(donkeycar, gym-donkeycar)을 받아온다.
 
 ```shell
-git submodule init
+git submodule update --init --recursive
 ```
+
+> `git submodule init` 만 치면 폴더가 **빈 채로** 남는다. 등록만 하고 내려받지는
+> 않기 때문이다. 위 명령을 써야 실제로 파일이 들어온다.
+>
+> 처음부터 한 번에 받으려면 `git clone --recurse-submodules <URL>` 을 쓰면 된다.
+>
+> ⚠ `git submodule update --remote` 는 쓰지 말 것. 수업이 고정해 둔 버전을 버린다.
 
 
 
@@ -169,7 +187,7 @@ DonkeyBro에에 들어가면 library_sheet가 있을것이다. cmd창으로 여�
 ```shell
 cd library_sheet
 pip install -r requirements_dynamic.txt
-pip install -r requirements_for_windows.txt
+pip install -r "requirements_for_windows(3.9).txt"
 cd ..
 ```
 
@@ -245,7 +263,7 @@ donkey createcar --template=cv_control --path car_cv
 ### Template(2): Path-Follow(DeepLearning)
 
 ```shell
-donkey createcar –template=path_follow --path car_dl
+donkey createcar --template=path_follow --path car_dl
 ```
 
 최종적으로 아래와 같이 아키텍처를 구축하게 됩니다.
