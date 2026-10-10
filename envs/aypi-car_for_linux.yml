@@ -1,4 +1,4 @@
-name: donkeybro
+name: aypi-car
 channels:
   - conda-forge
   - defaults
