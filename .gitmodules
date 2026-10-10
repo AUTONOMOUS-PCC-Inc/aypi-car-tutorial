@@ -1,14 +1,8 @@
-# [submodule "library/donkeycar"]
-# 	path = library/donkeycar
-# 	url = git@github.com:YUNSUNGWOONG/donkeycar.git
-# [submodule "library/gym-donkeycar"]
-# 	path = library/gym-donkeycar
-# 	url = git@github.com:YUNSUNGWOONG/gym-donkeycar.git
 [submodule "donkeycar"]
 	path = donkeycar
-	url = https://github.com/YUNSUNGWOONG/donkeycar.git
+	url = https://github.com/AUTONOMOUS-PCC-Inc/donkeycar.git
 	branch = main
 [submodule "gym-donkeycar"]
 	path = gym-donkeycar
-	url = https://github.com/YUNSUNGWOONG/gym-donkeycar.git
-	branch = master
+	url = https://github.com/AUTONOMOUS-PCC-Inc/gym-donkeycar.git
+	branch = aypi-pinned
